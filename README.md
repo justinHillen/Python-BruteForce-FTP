@@ -1,1 +1,6 @@
 # Python-BruteForce-FTP
+This project showcases an advanced Python script designed to perform brute-force login attempts on an FTP server. Utilizing the ftplib module, the script systematically attempts to authenticate with various username and password combinations sourced from a specified file.
+
+The core function, bruteForceLogin, takes a hostname and a password file as inputs. It reads the password file line by line, extracting potential usernames and passwords, which are separated by a colon. For each username-password pair, the script prints an attempt message and tries to log in to the FTP server using the ftplib.FTP class. If the login is successful, it prints a success message and returns the valid credentials. If the login attempt fails, the script silently handles the exception and proceeds to the next credential pair.
+
+When executed, the script reads the hostname and password file from predefined variables and invokes the bruteForceLogin function. This project demonstrates advanced techniques in network security, showcasing skills in handling FTP connections, error management, and automating brute-force attack methodologies to test the robustness of FTP server security configurations.
